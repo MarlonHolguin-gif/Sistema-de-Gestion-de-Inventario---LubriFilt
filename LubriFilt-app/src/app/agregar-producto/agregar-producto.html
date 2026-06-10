@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="container text-center" style="margin: 30px">
+        <h3>Agregar Producto</h3>
+    </div>
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="idProducto" class="form-label">idProducto</label>
+            <input type="text" class="form-control" id="idProducto" name="idProducto" [(ngModel)]="producto.idProducto">
+        </div>
+        <div class="mb-3">
+            <label for="nombreProducto" class="form-label">Nombre del Producto</label>
+            <input type="text" class="form-control" id="nombreProducto" name="nombreProducto" [(ngModel)]="producto.nombreProducto">
+        </div>
+        <div class="mb-3">
+            <label for="precioProducto" class="form-label">Precio del producto</label>
+            <input type="number" step="any" class="form-control" id="precioProducto" name="precioProducto" [(ngModel)]="producto.precioProducto">
+        </div>
+        <div class="mb-3">
+            <label for="costoProducto" class="form-label">Costo del producto</label>
+            <input type="number" step="any" class="form-control" id="costoProducto" name="costoProducto" [(ngModel)]="producto.costoProducto">
+        </div>
+        <div class="mb-3">
+            <label for="porcentajeutilidad" class="form-label">Porcentaje de Utilidad</label>
+            <input type="number" step="any" class="form-control" id="porcentajeutilidad" name="porcentajeutilidad" [(ngModel)]="producto.porcentajeutilidad">
+        </div>
+        <div class="mb-3">
+            <label for="existenciaProducto" class="form-label">Existencias del producto</label>
+            <input type="number" class="form-control" id="existenciaProducto" name="existenciaProducto" [(ngModel)]="producto.existenciaProducto">
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-warning btn-sm me-3">Agregar Producto</button>
+            <a href="/" class="btn btn-danger btn-sm">Regresar al Inicio</a>
+        </div>
+    </form>
+
+</div>

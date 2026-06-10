@@ -1,0 +1,37 @@
+<div>
+    <div class="container text-center" style="margin: 30px">
+    <h3>Sistema de Inventario LubriFilt </h3>
+    </div>
+
+  <table class="table table-striped table-hover align-middle">
+    <thead class ="table-dark">
+      <tr>
+        <th scope="col">idProducto</th>
+        <th scope="col">Nombre del Producto</th>
+        <th scope="col">Precio del Producto</th>
+        <th scope="col">Costo del Producto</th>
+        <th scope="col">Porcentaje de Utilidad </th>
+        <th scope="col">Existencias del Producto</th>
+        <th scope="col" class="text-center">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (producto of productos; track producto.idProducto){
+        <tr>
+          <th scope="row">{{ producto.idProducto }}</th>
+          <td>{{ producto.nombreProducto }}</td>
+          <td>{{ producto.precioProducto }}</td>
+          <td>{{ producto.costoProducto }}</td>
+          <td>{{ producto.porcentajeutilidad }} %</td>
+          <td>{{ producto.existenciaProducto }}</td>
+          <td class="text-center">
+            <div>
+              <button (click)="editarProducto(producto.idProducto)" class="btn btn-warning btn-sm me-2">Editar Producto</button>
+              <button (click)="eliminarProducto(producto.idProducto)" class="btn btn-danger btn-sm me-1">Eliminar Producto</button>
+            </div>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,40 @@
+target/
+*.class
+*.jar
+*.war
+*.log
+.mvn/
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ / VSCode / Eclipse
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# ==========================
+# ANGULAR
+# ==========================
+node_modules/
+dist/
+.angular/
+.cache/
+coverage/
+
+# Environment files
+src/environments/*.local.ts
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================
+# OS FILES
+# ==========================
+.DS_Store
+Thumbs.db
