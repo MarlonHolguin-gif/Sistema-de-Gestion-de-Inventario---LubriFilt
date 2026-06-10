@@ -17,7 +17,7 @@
 </div>
 
 <!--Intro start-->
-- El BackEnd se realizo con: Java, Spring Boot, Spring Data JPA, MySQL, Hibernate, API Rest, MySQL
+- El BackEnd se realizo con Java, Spring Boot, Spring Data JPA, MySQL, Hibernate, API Rest, MySQL
 - El FrontEnd se realizo con Angular, TypeScript, HTML, CSS y Bootstrap
 <!--Intro End-->
 
